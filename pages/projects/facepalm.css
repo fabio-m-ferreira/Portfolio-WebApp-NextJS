@@ -1,0 +1,141 @@
+#projects {
+    margin: 0;
+    min-height: 100vh;
+}
+
+#projects footer {
+    margin-top: 0;
+}
+
+#projects .btn {
+    margin-top: 2rem;
+}
+
+.project-header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.project-header .image-wrapper {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+}
+
+.project-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-icon {
+    color: var(--color-primary);
+    font-size: 2rem;
+    margin: 0 1rem
+}
+
+.project-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 10%;
+
+}
+
+.project-item:nth-child(odd) {
+    flex-direction: row-reverse;
+    background-color: #23233c;
+}
+
+.project-description {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.project-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image .image-wrapper {
+    position: relative;
+    display: flex;
+    width: 20rem;
+    height: 569px;
+    justify-content: center;
+}
+
+.project-image .image-wrapper img {
+    border-radius: 0.8rem;
+}
+
+.divider {
+    width: 80%;
+    height: 1px;
+    background-color: azure;
+    margin: 0 auto;
+}
+
+/* ========== MEDIA QUERIES (Medium Devices) ========== */
+
+@media screen and (max-width: 1024px) {
+
+    .project-item {
+        flex-flow: column;
+    }
+
+    .project-item:nth-child(odd) {
+        flex-direction: column;
+        background-color: #23233c;
+    }
+
+    .project-description {
+        width: 100%;
+        text-align: center;
+    }
+
+    #projects .project-description .text-light {
+        margin: 2rem 0;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+}
+
+/* ========== MEDIA QUERIES (Small Devices) ========== */
+
+@media screen and (max-height: 760px) {
+
+    .project-header {
+        justify-content: flex-start;
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-height: 570px) {
+
+    .project-header .image-wrapper {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 410px) {
+
+    .project-image .image-wrapper {
+        width: 13rem;
+        height: 369px;
+    }
+
+}
